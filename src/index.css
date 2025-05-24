@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Pour le mode clair uniquement */
+.light .sidebar-item:hover {
+  background-color: rgb(232, 232, 232); /* gris clair */
+}
+
+.light .sidebar-item.active {
+  background-color: rgb(232, 232, 232);
+ 
+}
+
+
