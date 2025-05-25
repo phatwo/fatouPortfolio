@@ -4,37 +4,34 @@ import {
   Code,
   FolderKanban,
   Pen,
-  
   Moon,
   Sun,
 } from "lucide-react";
 import { useState, useEffect } from "react";
 
 export default function Sidebar({ onSelect }) {
-  const [isDark, setIsDark] = useState(false);
-  const [activeKey, setActiveKey] = useState("about");
+  const [isDark, setIsDark] = useState(true); // sombre par défaut
+  const [activeKey, setActiveKey] = useState("aboutme");
 
   useEffect(() => {
-    const dark = localStorage.getItem("theme") === "dark";
-    setIsDark(dark);
-    document.documentElement.classList.toggle("dark", dark);
+    // Forcer le mode sombre à chaque lancement
+    document.documentElement.classList.add("dark");
+    setIsDark(true);
   }, []);
 
   const toggleTheme = () => {
     const newMode = !isDark;
     setIsDark(newMode);
-    localStorage.setItem("theme", newMode ? "dark" : "light");
     document.documentElement.classList.toggle("dark", newMode);
   };
 
   const primaryItems = [
-    { icon: <Home />, label: "Accueil", key: "accueil" },
+    { icon: <Home />, label: "Accueil", key: "home" },
     { icon: <User />, label: "A propos", key: "aboutme" },
     { icon: <Code />, label: "Compétences", key: "skills" },
     { icon: <FolderKanban />, label: "Projets", key: "projects" },
     { icon: <Pen />, label: "Contact", key: "contact" },
   ];
-
 
   const renderItem = (item) => (
     <div
@@ -52,8 +49,6 @@ export default function Sidebar({ onSelect }) {
     >
       <span>{item.icon}</span>
       <span className="hidden sm:inline">{item.label}</span>
-
-      {/* Tooltip visible uniquement en responsive */}
       <span className="sm:hidden absolute left-full ml-2 w-max bg-gray-800 text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity">
         {item.label}
       </span>
@@ -65,21 +60,17 @@ export default function Sidebar({ onSelect }) {
       <div className="space-y-6">
         {primaryItems.map(renderItem)}
 
-        <hr className="border-neutral-300 dark:border-neutral-700 sm:hidden" />
-
-       
-      </div>
-
-      <div className="border-t border-neutral-300 dark:border-neutral-700 pt-4">
-        <button
-          onClick={toggleTheme}
-          className="flex items-center gap-3 hover:bg-gray-200 dark:hover:bg-neutral-800 p-2 rounded-md w-full"
-        >
-          {isDark ? <Sun /> : <Moon />}
-          <span className="hidden sm:inline">
-            {isDark ? "Mode clair" : "Mode sombre"}
-          </span>
-        </button>
+        <div className="border-t border-neutral-300 dark:border-neutral-700 pt-4">
+          <button
+            onClick={toggleTheme}
+            className="flex items-center gap-3 hover:bg-gray-200 dark:hover:bg-neutral-800 p-2 rounded-md w-full"
+          >
+            {isDark ? <Sun /> : <Moon />}
+            <span className="hidden sm:inline">
+              {isDark ? "Mode clair" : "Mode sombre"}
+            </span>
+          </button>
+        </div>
       </div>
     </aside>
   );

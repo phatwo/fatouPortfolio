@@ -5,7 +5,6 @@ const projects = [
     image: "/projet-BigData.png",
     title: "Application de Gestion de la Qualité des données dans un environnement Big Data (Cas de l'exhaustivité)",
     description: `J’ai conçu cette application dans le cadre de mon mémoire en Master MIAGE.
-
 Fonctionnalités principales :
 - Stockage des données sur HDFS Hadoop.
 - Détermination de l’exhaustivité.
