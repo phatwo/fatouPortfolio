@@ -2,7 +2,7 @@ import { Mail, Linkedin, Github } from "lucide-react";
 
 export default function AboutMe() {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-center min-h-screen max-w-6xl mx-auto px-6 py-12 gap-8">
+    <section className="flex flex-col md:flex-row justify-center py-16 px-16 min-h-screen max-w-6xl mx-auto gap-8">
       {/* Texte à gauche */}
       <div className="md:w-1/2">
         <h2 className="text-3xl font-bold mb-4">À propos de moi 👩🏽‍💻</h2>

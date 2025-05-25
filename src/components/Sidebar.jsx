@@ -11,7 +11,7 @@ import { useState, useEffect } from "react";
 
 export default function Sidebar({ onSelect }) {
   const [isDark, setIsDark] = useState(true); // sombre par défaut
-  const [activeKey, setActiveKey] = useState("aboutme");
+  const [activeKey, setActiveKey] = useState("home");
 
   useEffect(() => {
     // Forcer le mode sombre à chaque lancement
