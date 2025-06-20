@@ -6,19 +6,19 @@ const skills = [
 
 const certifications = [
   {
-    title: "Data Fundamentals - IBM",
+    title: "Les fondamentaux de la data - IBM",
     description: "Connaissance des concepts, des méthodologies et des applications de l'analyse de données en science des données, ainsi que des outils et langages de programmation utilisés dans l'écosystème des données.",
     image: "/Data-Fundamentals.jpg",
     link: "https://www.credly.com/badges/1d3183c4-8e9f-491b-bb0c-6c17d009f838/linked_in_profile",
   },
    {
-    title: "Artificial Intelligence Fundamentals - IBM",
+    title: "Les fondamentaux de l'intélligence artificielle - IBM",
     description: "connaissance des concepts de l'intelligence artificielle (IA), tels que le traitement du langage naturel, la vision par ordinateur, l'apprentissage automatique, l'apprentissage profond, les chatbots et les réseaux neuronaux ; de l'éthique de l'IA ; et de ses applications. Il possède une compréhension conceptuelle de l'exécution d'un modèle d'IA avec IBM Watson Studio. Il connaît les perspectives d'emploi dans les domaines utilisant l'IA et maîtrise les compétences requises pour réussir dans les différents rôles du secteur.",
     image: "/IA.png",
     link: "https://www.credly.com/badges/ff8abb41-6b11-4cfe-ad57-16d3117ac613/linked_in_profile",
   },
   {
-    title: "Power BI Intro - Datacoach - Benjamin Ejzenberg",
+    title: "Introduction à Power BI - Datacoach - Benjamin Ejzenberg",
     description: "Introduction à Power BI. Cette expérience m’a doté de compétences précieuses en analyse de données.",
     image: "/Power-BI.png",
     link: "https://www.datacoach.ca/diplome?id=ba8fccd3-7b83-4032-9b55-6db4d95f190b",
