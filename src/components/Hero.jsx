@@ -21,7 +21,7 @@ export default function Hero({ onSelect }) {
 </motion.h1>
 
   <span className="mt-4 text-neutral-800 dark:text-neutral-100 text-base md:text-lg text-center mx-auto">
-    Développeuse | Apprenante Data vers Data Engineer
+    Développeuse | Apprenante Data Engineer
   </span>
    <motion.div 
         className="mt-4 w-40 h-40 md:w-52 md:h-52 rounded-full overflow-hidden border-4 border-purple-300 text-center mx-auto"

@@ -1,10 +1,17 @@
-import { motion } from "framer-motion";
+import { mirrorEasing, motion } from "framer-motion";
+import { Edit2Icon, LucidePanelBottomDashed, MessageCircleHeartIcon } from "lucide-react";
 
 const skills = [
   "React", "JavaScript", "CSS", "HTML", "PHP", "JAVA", "Flask", "Python", "MySQL", "Hadoop", "Spark", "SQL", "Git", "Power BI", "Canva", "Figma", "No-code", "Excel"
 ];
 
 const certifications = [
+    {
+    title: "AWS Cloud Pratitioner",
+    description: "Avantages du Cloud, Serveur virtuel EC2, Serveless Lambda, Reseau VPC, Sécurité IAM, Base de données : RDS DynamoDB, Facturation, Migration, CAF, Well-Architected",
+    image: "/AWS.png",
+    
+  },
   {
     title: "Les fondamentaux de la data - IBM",
     description: "Connaissance des concepts, des méthodologies et des applications de l'analyse de données en science des données, ainsi que des outils et langages de programmation utilisés dans l'écosystème des données.",
