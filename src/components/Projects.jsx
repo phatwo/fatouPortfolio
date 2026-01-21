@@ -2,6 +2,17 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
+    image: "/dag_success.png",
+    title: "ETL Industrialisé",
+    description: `Implémentation d'un pipeline ETL (Extract, Transform, Load) automatisé de collecte de données
+    de livres à partir de sources multiples à l'aide d'Airflow, Spark et MinIO.`,
+    technos: ["Python", "Airflow", "Spark", "Docker", "ETL", "Data Engineer", "Minio"],
+    demo: "",
+    github: "https://github.com/phatwo/etl-airflow-spark",
+    online: "",
+    offline: ""
+  },
+  {
     image: "/projet-BigData.png",
     title: "Application de Gestion de la Qualité des données dans un environnement Big Data (Cas de l'exhaustivité)",
     description: `J’ai conçu cette application dans le cadre de mon mémoire en Master MIAGE.

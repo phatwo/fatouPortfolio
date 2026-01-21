@@ -2,7 +2,7 @@ import { mirrorEasing, motion } from "framer-motion";
 import { Edit2Icon, LucidePanelBottomDashed, MessageCircleHeartIcon } from "lucide-react";
 
 const skills = [
-  "React", "JavaScript", "CSS", "HTML", "PHP", "JAVA", "Flask", "Python", "MySQL", "Hadoop", "Spark", "SQL", "Git", "Power BI", "Canva", "Figma", "No-code", "Excel"
+  "Python", "JavaScript", "CSS", "HTML", "PHP", "JAVA", "Docker", "Flask", "Pandas", "MySQL", "Hadoop", "Apache Spark", "SQL", "Git", "Power BI", "Canva", "Figma", "No-code", "Excel"
 ];
 
 const certifications = [
