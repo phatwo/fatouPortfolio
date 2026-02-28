@@ -10,7 +10,7 @@ export default function AboutMe() {
           <p>Bonjour à tous, je m'appelle <span className="text-purple-500 font-bold">Fatou Touré</span> et je viens du Mali 📍.</p>
           <p>Je suis passionnée par les nouvelles technologies 🚀 et j'aime trouver des solutions créatives 💡 à des problèmes complexes.</p>
           <p>Curieuse 🧠, je cherche constamment à me perfectionner en découvrant de nouveaux outils 🧰 et techniques pour améliorer mes compétences, notamment dans le développement d'applications 📱, la data 📊 et le design créatif 🎨.</p>
-          <p>Je suis prête à relever de nouveaux défis professionnels 🛠️ 🤝 !</p>
+          <p>Toujours prête à relever de nouveaux défis techniques et à contribuer à des projets à fort impact. 🛠️ 🤝 !</p>
         </div>
       </div>
 
